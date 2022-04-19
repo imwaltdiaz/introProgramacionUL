@@ -287,3 +287,16 @@ if __name__ == "__main__",
 ```
 
 Selectiva de decisión "Two ways"
+```py
+def main():
+    fahren = float(input("Ingrese teperatura en Fahrenheit: "))
+    # va a recibir un input y lo va a solicitar recibir como float
+    celsius = (fahren - 32)*(5/9)
+    print("La temperatura en celsius es: ", '%.2f' %celsius)
+    if celsius <= 17:
+        print("Es un dia frío")
+    else:
+        print("Es un dia caluroso")
+    
+main() 
+```
