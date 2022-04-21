@@ -302,3 +302,101 @@ main()
 ```
 Elif es else if
 
+EJercicios 2:
+
+1
+```js
+INICIO
+    Ingresar monto de pago($) y asignar a MONTO
+    Si MONTO <= 100 entonces
+        Mostrar "Pago con efectivo"
+    Sino si MONTO > 100 y MONTO <= 300
+        Mostrar "Pago con Débito"
+    Sino 
+        Mostrar "Pago con Credito"
+FIN
+```
+
+Otra solución
+
+```js
+INICIO
+    Ingresar monto de pago($) y asignar a MONTO
+    SI MONTO <= 100 entonces
+        Mostrar "Pago con Efectivo"
+    SINO
+        SI MONTO > 100 y MONTO <= 300
+            Mostrar "Pago con Debito"
+        Sino 
+            Mostrar "Pago con Crédito"
+FIN
+```
+En py
+```py
+def main():
+  monto = float(input("Ingrese monto: "))
+  # if monto <= 100:
+  #   print("Pago con efectivo")
+  # elif monto>100 and monto <=300:
+  #   print("Pago con debito")
+  # else:
+  #   print("Pago con crédito")
+  if monto <= 100:
+    print("Pago con efectivo")
+  else: 
+    if monto>100 and monto <=300:
+      print("Pago con débito")
+    else:
+      print("Pago con crédito")
+main()
+```
+
+2
+```js
+INICIO
+    Ingresar dividendo y asignar a DIVIDENDO
+    Ingresar divisor y asignar a DIVISOR
+    Si DIVISOR es igual a 0 entonces
+        Mostrar "No se puede dividir entre 0"
+    SINO
+        Si DIVIDENDO $ DIVISOR es igual a 0 entonces
+            Mostrar "Division Exacta"
+        Sino
+            Mostrar "División No Exacta"
+
+FIN
+```
+
+en py
+```py
+def main():
+  dividendo = float(input("Ingrese el dividendo: "))
+  divisor = float(input("Ingrese el divisor: "))
+  if divisor == 0:
+    print("No existe la división entre 0")
+  else:
+    result = dividendo/divisor
+    print("El resultado de la división es ", result)
+    if dividendo%divisor == 0:
+      print("Division exacta")
+    else:
+      print("Division no exacta")
+main()
+```
+4
+```js
+INICIO
+    Ingresar año actual y asignar a Actual
+    Ingresar año cualquier y asignar a X 
+    Calcular ACTUAL - X y asignar a DIF
+    Si DIF es menor a 0
+        Mostrar "Faltan", DIF, "Años"
+    Sino 
+        Si DIFE es igual a 0 entonces
+            Mostrar "Años iguales"
+        Sino
+            Mostrar "Han pasado", DIFE, "años" 
+FIN
+```
+
+Ahora en py
