@@ -400,3 +400,45 @@ FIN
 ```
 
 Ahora en py
+
+## Tema X
+
+```js
+c <- 1
+mientras c<= 10
+    imprimir "python"   
+    c <- c + 1
+Fin de mientras
+```
+La flecha es la asignación
+
+Esto imprimirá python 10 veces
+
+```py
+def main():
+    c = 1
+    while c<=10:
+        print("python")
+        c = c+1
+main()  
+```
+bloque for
+
+while se usa cuando no sabes el limite de veces, normalmente el usuario lo decide
+```py
+def main():
+    c = 1
+    while c<=10:
+        print("python")
+        c = c+1
+    print("Bang")
+    for i in range (1,11):
+        #El limite al ultimo es abierto, no llegará a 11
+        #El ultimo espacio del for en py es para sumar +1, si no pones nada , asumirá que es +1
+        print("Python")
+main()  
+```
+
+```py
+
+```
