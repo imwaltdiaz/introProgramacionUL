@@ -438,7 +438,82 @@ def main():
         print("Python")
 main()  
 ```
+> Faltan unos cuantos ejercicios, añadir luego
+
 
 ```py
 
+```
+
+
+
+```py
+def main():
+  num = int(input("Ingrese un numero"))
+  for i in range(1, num+1):
+    for j in range ( 1, num+1):
+      cantidad= (i-1)*num+j
+      print(cantidad, end = "  ")
+    print("")
+main()
+```
+1  2  
+3  4  
+
+
+Ejercicio 3
+
+```py
+def main():
+  for i in range (40,60):
+    if( i % 2 == 0 ):
+      print(i)
+main()
+```
+Ej 4
+```py
+def main():
+  for i in range (48,121, +4):
+    print(i) 
+main()
+```
+
+Ej 5
+```py
+def main():
+  suma = 0
+  for i in range(1,51):
+    suma = suma + i
+  print("La suma es: ", suma)
+main()
+```
+Ej 9 
+````py
+def main():
+  num = int(input("Ingrese numero: "))
+  while num < 0:
+    print("Tiene que ingresar numero positivo")
+    num = int(input("Ingrese numero: "))
+  while num!=-1:
+    if num%2==0:
+      print("Ingreso un numero par")
+    else:
+      print("Ingrese un numero impar")
+    num = int(input("ingrese otro número: "))
+main()
+```
+```py
+num=int(input("Ingrese numero: "))    
+    
+    while num!=-1:
+        while num<0:
+            print("Tiene que ingresar numero positivo")
+            num=int(input("Ingrese numero: "))        
+        
+        if num%2==0:
+            print("Ingreso un numero par")
+        else:
+            print("Ingreso un numero impar")
+        num=int(input("Ingrese otro numero: "))    
+    print("Ingreso -1, termino el programa")
 ```
