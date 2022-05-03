@@ -488,7 +488,7 @@ def main():
 main()
 ```
 Ej 9 
-````py
+```py
 def main():
   num = int(input("Ingrese numero: "))
   while num < 0:
@@ -517,3 +517,57 @@ num=int(input("Ingrese numero: "))
         num=int(input("Ingrese otro numero: "))    
     print("Ingreso -1, termino el programa")
 ```
+
+> Something is missing here
+
+## Análisis de algoritmos
+
+Queremos ahorrar tiempo y espacio(tiene o requiere)
+
+Vas midiendo y estableciendo parametros para los algoritmos
+
+Tipos de análisis:
+- Experimental: Medir el tiempo
+- Teórico: Cuanto se demoraría, imaginando o estimando cuanto tomaría o consumiría
+
+Análisis Teórico
+- Mejor caso
+- Peor caso
+Predecir como se debería comportar en el mejor y en el peor caso
+
+## Listas (Arrays)
+
+Un conjunto de elementos relacionados
+
+Es una secuencia ordenada de un conjunto de elementos
+
+En py las listas son heterogeneas, le puedes meter float, string, cualquier tipo de dato, en Java en una lista primitiva, si trabajan con solo int, solo serán int sus elementos
+
+Son dinámicas en py, pueden ir creciendo
+
+```py
+def main():
+    lista = [10,20,30,40]
+    suma = 0
+    for i in range(0, len(lista)):
+        suma = suma+lista[i]
+    print(suma)
+main()  
+```
+
+```py
+`def main():
+    list = [10,20,30,40]
+    count = 0
+    num = int(input("Ingresar numero a buscar "))
+    while count <len(list) and list[count]!=num:
+        count += 1
+    if count<len(list):
+        print("Se encontro")
+    else:
+        print("No se encontró")
+main()  
+```
+
+Practicar métodos de arrays con: https://www.w3schools.com/python/python_ref_list.asp
+
