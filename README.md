@@ -571,3 +571,153 @@ main()
 
 Practicar métodos de arrays con: https://www.w3schools.com/python/python_ref_list.asp
 
+## Ejercicios con Arrays
+
+```py
+def main():
+  lista = []
+  num = int(input("Ingresar un número, 0 para terminar: "))
+  while num!= 0:
+    lista.append(num)
+    num = int(input("Ingresar un número, 0 para terminar: "))
+  print(lista)
+main()
+```
+recuerda el for a la izquierda es cerrado y a la derecha es abierto
+
+```py
+def main():
+  lista = []
+  num = int(input("Ingresar un número, 0 para terminar: "))
+  while num!= 0:
+    lista.append(num)
+    num = int(input("Ingresar un número, 0 para terminar: "))
+  print(lista)
+
+  suma = 0
+  for i in range(0,len(lista)):
+    suma = suma + lista[i]
+  promedio = suma / len(lista)
+  print("El promedio es: ", promedio)
+main()
+```
+
+otra forma
+```py
+def main():
+  lista = []
+  num = int(input("Ingresar un número, 0 para terminar: "))
+  while num!= 0:
+    lista.append(num)
+    num = int(input("Ingresar un número, 0 para terminar: "))
+  print(lista)
+
+  suma = 0
+  contador = 0
+  for i in range(0,len(lista)):
+    suma = suma + lista[i]
+    contador = contador + 1
+  promedio = suma / contador
+  print("El promedio es: ", promedio)
+main()
+```
+
+## Cadena
+
+Un string, una lista de caracteres
+
+cadena = "ABC" es un ejemplo
+
+```py
+def main():
+  nombre = "ULIMA"
+  for i in range(0, len(nombre)):
+    print(nombre[i])
+main()
+```
+
+inicio, fin, incremento/decremento
+```py
+def main():
+  nombre = "ULIMA"
+  for i in range(0, len(nombre)):
+    print(nombre[i])
+  nombreInver = []
+  for i in range(len(nombre)-1,-1,-1):
+    nombreInver.append(nombre[i])
+  print(nombreInver)
+main()
+```
+
+## Listas multidimensionales
+Arrays que contienen a otros arrays
+
+Recuerda la primer afila es 0,0 0,0 0,2
+La segunda es 1,0 1,1 1,2
+
+```py
+def main():
+  a= [[1,2,3],[4,5,6],[7,8,9]]
+
+  for i in range (0, len(a)):
+    for j in range(0, len(a[i])):
+      print(a[i][j], end= " ")
+    print()
+
+main()
+```
+### Slicing es cortar, sacar una parte o un pedazo
+
+```py
+def main():
+  a= [1,2,3,4,5,6,7,8,9]
+  print(a[1:4])
+main()
+```
+Dará 2,3,4
+
+```py
+def main():
+  a= [1,2,3,4,5,6,7,8,9]
+  print(a[:4])
+main()
+```
+Dará 1,2,3,4
+
+```py
+def main():
+  lista = [1,2,3]
+  lista2 = []
+  suma = 0
+  for i in range(0, len(lista)):
+    suma = suma + lista[i]
+    lista2.append(suma)
+  print(lista2)
+main()
+```
+
+  evaluando = notas.sort()
+  print(evaluando)
+
+```py
+def main():
+  notas = [11,15,8,11,19]
+  mayorNota = 0
+  for i in range(0, len(notas)):
+    if notas[i]>mayorNota:
+      mayorNota = notas[i]
+  notasLetras=[]
+  for i in range(0, len(notas)):
+    if notas[i]>= mayorNota - 2:
+      notasLetras.append("A")
+    elif notas[i]>= mayorNota - 4:
+      notasLetras.append("B")
+    elif notas[i]>= mayorNota - 6:
+      notasLetras.append("C")
+    elif notas[i]>= mayorNota - 8:
+     notasLetras.append("D")
+    else:
+      notasLetras.append("E")
+  print(notasLetras)
+main()
+```
