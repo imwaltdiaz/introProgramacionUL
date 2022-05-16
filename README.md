@@ -721,3 +721,107 @@ def main():
   print(notasLetras)
 main()
 ```
+
+## Funciones
+
+```py
+def suma(num1,num2):
+  return num1+num2
+  # print("La suma es ", num1+num2)
+def main():
+  num1= int(input("Ingrese un numero 1: "))
+  num2= int(input("Ingrese un numero 2: "))
+
+  result = suma(num1,num2)
+  print("La suma es", result)
+main()  
+```
+
+Otra forma cambiando los parametros de suma
+```py
+def suma(a,b):
+  return a+b
+  # print("La suma es ", num1+num2)
+def main():
+  num1= int(input("Ingrese un numero 1: "))
+  num2= int(input("Ingrese un numero 2: "))
+
+  result = suma(num1,num2)
+  print("La suma es", result)
+main()  
+```
+
+Ejercicio de identificar si es primo un num
+```py
+def esPrimo(n):
+  cuentaDivisores = 2
+  for i in range (2 , n):
+    if n % i == 0:
+      cuentaDivisores = cuentaDivisores + 1
+  if cuentaDivisores > 2:
+    print("n no es primo")
+  else:
+    print("n es primo")  
+
+def main():
+  num= int(input("Ingrese un numero: "))
+  
+  esPrimo(num)
+main()  
+```
+
+Duc typing, tpo de objketo que solo importa el tiempo de ejecución
+
+una funcion que junte cosas y no importa los parametros
+
+### Ejercicios
+
+1 
+```py
+def maxi(num1,num2):
+  if num1 > num2:
+    return num1
+  else:
+    return num2
+
+def main():
+  num1 = int(input("Ingrese un numero 1: "))
+  num2 = int(input("Ingrese un numero 2: "))
+
+  print("El numero mayor es ", maxi(num1,num2))
+main()  
+```
+8 leer un numero capicua
+```py
+def invertir(n):
+  a = ""
+  for i in range (len(n)-1, -1, -1):
+    a = a + n[i]
+  return a
+
+def esPalindromo(n):
+  numInvertido = invertir(n)
+  if n == numInvertido:
+    print("Es palindromo")
+  else:
+    print("No es palindromo")
+
+def main():
+  num = str(input("Ingrese numero: "))
+  print("El numero invertido es", invertir(num))
+  esPalindromo(num)
+
+main()  
+```
+tip: cambiar n por numero
+
+para el examen: crear 3 archivos en una carpeta examenControl2 
+
+El nombre será P1.py, P2.py, P3.py 
+
+Hacer resumen de la documentación
+
+- while y for
+- bucles anidados (for dentro de otro for)
+- arrays (o listas)
+- funciones
