@@ -43,3 +43,14 @@ def functionName(parameter1,parameter2):
   # Execute this
 functionName(entry1,entry2)
 ```
+
+# Recursividad
+
+basicamente una funcion arriba para una serie, ejm funcion n + nmbreFuncion(n-1)
+
+# analisis de algoritmos
+
+los for te toman m + 1 o n + 1, si tenemos de n a m, entonces m-n+1 y con lo de adentro pasara igual
+un for que incluye  otro for, se multiplicara
+
+operaciones e if toman 1
