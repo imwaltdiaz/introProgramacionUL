@@ -825,3 +825,66 @@ Hacer resumen de la documentación
 - bucles anidados (for dentro de otro for)
 - arrays (o listas)
 - funciones
+
+## Tupla
+
+las tuplas son como listas per oconstantes, no puedes modificar sus elementos}
+```py
+tupla1 = tuple("programacion")
+print(tupla1)
+```
+te devolveria cada uno de las letras por separado a partir de una palabra
+
+```py
+tupla2 = tuple(range(10,20))
+print(tupla2)
+```
+Imprimira todos los elementos del 10 al 19
+
+```py
+tupla = (100,200,300)
+print(tupla.indes(200))
+```
+te mandará el valor 200, o al menos el primer 200 que encuentre
+
+## Diccionario
+
+Llave y diccionario
+```py
+dicc = {"a":"alpha", "o":"omega", "g":"gamma"}
+print(dicc[1])
+```
+te da error, xq ya no puedes acceder a los diccionarios por indices
+
+sino necesitas la llave
+```py
+dicc = {"a":"alpha", "o":"omega", "g":"gamma"}
+print(dicc["a"])
+```
+te dará alpha
+```py
+dicc = {1:"alpha", 2:"omega", 3:"gamma"}
+print(dicc[1])
+```
+te botará alpha
+```py
+dicc = {"1":1,"2":2}
+print(dicc.get)
+```
+
+```py
+dicc = {"1":1,"2":2}
+dicc.setdefault("4")
+print(dicc.get("1000", "no se encontro"))
+```
+
+```py
+dicc={"Peru":"Lima","Colombia":"Bogota"}
+    correctas=0
+    for i in dicc:
+        resp=str(input("cual es la capital de " + i + " : " ))
+        if dicc[i]==resp:
+            correctas=correctas+1
+            
+    print("La cantidad de respuestas correctas es:",correctas)
+```
