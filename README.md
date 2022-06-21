@@ -888,3 +888,64 @@ dicc={"Peru":"Lima","Colombia":"Bogota"}
             
     print("La cantidad de respuestas correctas es:",correctas)
 ```
+
+Escriba una función hay_poker que reciba cinco cartas de la baraja francesa (con la representación propuesta en la pregunta anterior) e informe si esas cartas forman o no un poker, es decir, si hay 4 cartas con el mismo número. Su función debe retornar True o False
+```py
+import random
+def poker(carta1,carta2):
+    if carta1[1] == carta2[1]:
+        print("Es poker")
+    else:
+        print("No es poker")
+def main():
+    carta = (("cor",1),("cor",2),("tre",1),("tre",2))
+    c1 = random.randint(0,3)
+    c2 = random.randint(0,3)
+    poker(carta[c1],carta[c2])
+main()
+```
+> Este viene en examen
+5.	Escriba un programa que ayude a controlar el ingreso de empleados a una oficina. El programa debe tener ya cargados los apellidos de los empleados, y debe permitir que los empleados ingresen su código para registrar su ingreso. El programa se mantendrá aceptando códigos hasta que el Administrador del sistema ingrese un código maestro (7777), tras lo cual el programa imprimirá la lista de los empleados que no hayan registrado su ingreso.
+
+```py
+from webbrowser import get
+def main():
+    dicc = {
+        91: ["Ruiz", 0],
+        92: ["Alba", 0],
+        93: ["Fernan", 0]
+    }
+    cod = int(input("Ingrese codigo: "))
+    while cod != 7777:
+        if dicc.get(cod):
+            dicc[cod][1] += 1
+        cod = int(input("Ingrese codigo: "))
+    for i in dicc:
+        if dicc[i][1] == 0:
+            print("El trabajador " + dicc[i][0] + " no asistio")
+main()
+```
+
+## Algoritmos de busqueda
+
+```py
+def busqueda(lista,num):
+    indice = -1
+    for i in range(0,len(lista)):
+    # Esto xq necesitamos el indice
+        if lista[i] == num:
+            indice = i
+    if indice == -1:
+        print("No se encontró")
+    else:
+        print("Si se encontró en la posicion ", indice)
+def main():
+    lista = [10,21,3,4,6,90,100]
+    num = int(input("Ingrese su numero a buscar: "))
+    busqueda(lista, num)
+main()
+```
+
+## Trabajo 
+Se tiene que hacer una aplicacion utiizando todos los conceptos visto en clases (busqueda, ordenamiento, diccionarios)
+
