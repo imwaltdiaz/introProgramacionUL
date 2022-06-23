@@ -1,6 +1,6 @@
 # introProgramacionUL
 
-## Concepto de Variable 
+## Concepto de Variable
 
 Las variables son utilizadas para referenciar (apuntar) información en memoria
 
@@ -8,7 +8,7 @@ La variable debe estar en un contenedor
 
 La variable tieneun identificador para acceder a la información
 
-Una variable puede tener valores diferentes durante el desarrollo de su programa 
+Una variable puede tener valores diferentes durante el desarrollo de su programa
 
 "Garbage collector" proceso que consiste de liberar espacios de memoria que no almacenan ninguna variable
 
@@ -24,16 +24,19 @@ La expresión podría ser una formula
 
 Java es tipado y py es no tipado
 
-## Tipos de datos - Definición 
+## Tipos de datos - Definición
 
 Variables numericos
+
 - int: con numeros enteros
 - float: condecimales
 
 Variables alfanuméricas
+
 - Cadenas de texto
 
 Variables lógicas
+
 - Con un valor booleano (true or false)
 
 ```py
@@ -61,12 +64,15 @@ type(a)
 **Representación de algoritmos numéricos**
 
 Utilización de constantes
-- Adms de variables, un algoritmo requiere de constantes 
+
+- Adms de variables, un algoritmo requiere de constantes
 
 Variables númericas - Tipo int
+
 - Permite almacerar números enteros, esto es variables que no son fracciones ni podran serlo
 
 Variables tipo - float
+
 - Contienen decimal, si no tiene decimal, trabaja con int, y con decimal trabaja con float
 
 ```py
@@ -86,31 +92,37 @@ Luisborjas
 ```
 
 ## Definición de algoritmo
+
 Secuencia de instrucciones que representa la solución de un problema o situación determinada
 
 Que consta un algoritmo??
+
 - Entrada
-    - Que se necesita para realizar los pasos
+
+  - Que se necesita para realizar los pasos
 
 - Salida
-    - Que se obtiene al final del algoritmo
+
+  - Que se obtiene al final del algoritmo
 
 - Proceso
-    - De transformación, hace los pasos
+
+  - De transformación, hace los pasos
 
 - Tipos de datos
-    - Números: enteros, reales, complejos
-    - Texto: letras, palabras, frases
-    - Otros
-
+  - Números: enteros, reales, complejos
+  - Texto: letras, palabras, frases
+  - Otros
 
 Características
+
 - Preciso
 - Definido
 - Finito
 - Debe producir un resultado
 
 **Técnicas de representación**
+
 - Diagramas de flujo
 - Pseudocódigo
 - Lenguaje natural
@@ -118,6 +130,7 @@ Características
 
 **Diagramas**
 Permite representar solución tras paso a paso de que hacer el proceso
+
 > Insertar imagen
 
 **Pseudocodigo**
@@ -125,16 +138,17 @@ Permite representar el algoritmo pero con palabras imperativas
 
 Se debe representar lo que se quiere ahí
 
-Osea verbos de acción: Inicie,  calcule, lea, imprima, finalice
+Osea verbos de acción: Inicie, calcule, lea, imprima, finalice
 
 **Construccion**
 Ejemplo
+
 - Objetivo: calcular el precio de una manzana
 - Entradas
-    - Precio (en soles) del kilo de manzanas [K]
-    - Peso (en gramos) promedio de una manzana [P]
+  - Precio (en soles) del kilo de manzanas [K]
+  - Peso (en gramos) promedio de una manzana [P]
 - Salida
-    - Precio (en soles) de una manzana [M]
+  - Precio (en soles) de una manzana [M]
 
 ```py
 Inicio
@@ -146,8 +160,6 @@ Fin
 ```
 
 > Insertar modo de diagrama de flujo
-
-
 
 **Construccion de algoritmos**
 
@@ -163,24 +175,24 @@ Pies es la entrada y pies es la salida
 
 //Objetivo: Convertir pies a metros
 
-/* 
+/*
 Inicio
     Ingresar longitud en pies y asignar a P
     Calcular P * 0.3048 y asignar a Resultado
     Mostrar "El resultado es", Resultado
 Fin
-*/ 
+*/
 
 Otro caso es
 
-/* 
+/*
 Inicio
     Ingresar y asignar a P
     Asignar 0.3048 a Cons
     Calcular P + Cons y asignar a R
     Mostrar "El resultado es", R
 Fin
-*/ 
+*/
 ```
 
 Escribir algoritmo que ingrese subtotal y tasa de gratuitidad
@@ -205,7 +217,7 @@ Fin
 ```js
 Inicio
     Ingresar el monto ahorrado mensual($) y asignar a ahorroConst
-    Ingresar tasa efectiva anual(%) y asignar a TEA 
+    Ingresar tasa efectiva anual(%) y asignar a TEA
     Calcular ((1+TEA)^(1/12)-1) y asignar a TEM
     Calcular (1 + TEM) y asignar a oTEM
     Calcular (ahorroConst*oTEM) y asignar a M1
@@ -215,7 +227,6 @@ Inicio
     Mostrar "Monto Mes 4", M4
 Fin
 ```
-
 
 ```js
 Inicio
@@ -249,9 +260,11 @@ def main():
     pass
 main()
 ```
+
 py no trabaja de arriba a abajo, debes avisarle cual es la función principal
 
 ejercicio de clase:
+
 ```py
 def main():
     fahren = float(input("Ingrese teperatura en Fahrenheit: "))
@@ -262,11 +275,12 @@ def main():
         print("Es un dia frío")
     if celsius > 17:
         print("Es un dia caluroso")
-    
+
 main()
 ```
 
 Y mi opción para que te cargue con solo 2 decimales:
+
 ```py
 def main():
     fahren = float(input("Ingrese teperatura en Fahrenheit: "))
@@ -276,17 +290,19 @@ def main():
         print("Es un dia frío")
     if celsius > 17:
         print("Es un dia caluroso")
-    
-main() 
+
+main()
 ```
 
 La forma de poner la función principal es:
+
 ```py
 if __name__ == "__main__",
     main()
 ```
 
 Selectiva de decisión "Two ways"
+
 ```py
 def main():
     fahren = float(input("Ingrese teperatura en Fahrenheit: "))
@@ -297,14 +313,16 @@ def main():
         print("Es un dia frío")
     else:
         print("Es un dia caluroso")
-    
-main() 
+
+main()
 ```
+
 Elif es else if
 
 EJercicios 2:
 
 1
+
 ```js
 INICIO
     Ingresar monto de pago($) y asignar a MONTO
@@ -312,7 +330,7 @@ INICIO
         Mostrar "Pago con efectivo"
     Sino si MONTO > 100 y MONTO <= 300
         Mostrar "Pago con Débito"
-    Sino 
+    Sino
         Mostrar "Pago con Credito"
 FIN
 ```
@@ -327,11 +345,13 @@ INICIO
     SINO
         SI MONTO > 100 y MONTO <= 300
             Mostrar "Pago con Debito"
-        Sino 
+        Sino
             Mostrar "Pago con Crédito"
 FIN
 ```
+
 En py
+
 ```py
 def main():
   monto = float(input("Ingrese monto: "))
@@ -343,7 +363,7 @@ def main():
   #   print("Pago con crédito")
   if monto <= 100:
     print("Pago con efectivo")
-  else: 
+  else:
     if monto>100 and monto <=300:
       print("Pago con débito")
     else:
@@ -352,6 +372,7 @@ main()
 ```
 
 2
+
 ```js
 INICIO
     Ingresar dividendo y asignar a DIVIDENDO
@@ -368,6 +389,7 @@ FIN
 ```
 
 en py
+
 ```py
 def main():
   dividendo = float(input("Ingrese el dividendo: "))
@@ -383,19 +405,21 @@ def main():
       print("Division no exacta")
 main()
 ```
+
 4
+
 ```js
 INICIO
     Ingresar año actual y asignar a Actual
-    Ingresar año cualquier y asignar a X 
+    Ingresar año cualquier y asignar a X
     Calcular ACTUAL - X y asignar a DIF
     Si DIF es menor a 0
         Mostrar "Faltan", DIF, "Años"
-    Sino 
+    Sino
         Si DIFE es igual a 0 entonces
             Mostrar "Años iguales"
         Sino
-            Mostrar "Han pasado", DIFE, "años" 
+            Mostrar "Han pasado", DIFE, "años"
 FIN
 ```
 
@@ -406,10 +430,11 @@ Ahora en py
 ```js
 c <- 1
 mientras c<= 10
-    imprimir "python"   
+    imprimir "python"
     c <- c + 1
 Fin de mientras
 ```
+
 La flecha es la asignación
 
 Esto imprimirá python 10 veces
@@ -420,11 +445,13 @@ def main():
     while c<=10:
         print("python")
         c = c+1
-main()  
+main()
 ```
+
 bloque for
 
 while se usa cuando no sabes el limite de veces, normalmente el usuario lo decide
+
 ```py
 def main():
     c = 1
@@ -436,16 +463,14 @@ def main():
         #El limite al ultimo es abierto, no llegará a 11
         #El ultimo espacio del for en py es para sumar +1, si no pones nada , asumirá que es +1
         print("Python")
-main()  
+main()
 ```
-> Faltan unos cuantos ejercicios, añadir luego
 
+> Faltan unos cuantos ejercicios, añadir luego
 
 ```py
 
 ```
-
-
 
 ```py
 def main():
@@ -457,9 +482,9 @@ def main():
     print("")
 main()
 ```
-1  2  
-3  4  
 
+1 2  
+3 4
 
 Ejercicio 3
 
@@ -470,15 +495,18 @@ def main():
       print(i)
 main()
 ```
+
 Ej 4
+
 ```py
 def main():
   for i in range (48,121, +4):
-    print(i) 
+    print(i)
 main()
 ```
 
 Ej 5
+
 ```py
 def main():
   suma = 0
@@ -487,7 +515,9 @@ def main():
   print("La suma es: ", suma)
 main()
 ```
-Ej 9 
+
+Ej 9
+
 ```py
 def main():
   num = int(input("Ingrese numero: "))
@@ -502,19 +532,20 @@ def main():
     num = int(input("ingrese otro número: "))
 main()
 ```
+
 ```py
-num=int(input("Ingrese numero: "))    
-    
+num=int(input("Ingrese numero: "))
+
     while num!=-1:
         while num<0:
             print("Tiene que ingresar numero positivo")
-            num=int(input("Ingrese numero: "))        
-        
+            num=int(input("Ingrese numero: "))
+
         if num%2==0:
             print("Ingreso un numero par")
         else:
             print("Ingreso un numero impar")
-        num=int(input("Ingrese otro numero: "))    
+        num=int(input("Ingrese otro numero: "))
     print("Ingreso -1, termino el programa")
 ```
 
@@ -527,13 +558,15 @@ Queremos ahorrar tiempo y espacio(tiene o requiere)
 Vas midiendo y estableciendo parametros para los algoritmos
 
 Tipos de análisis:
+
 - Experimental: Medir el tiempo
 - Teórico: Cuanto se demoraría, imaginando o estimando cuanto tomaría o consumiría
 
 Análisis Teórico
+
 - Mejor caso
 - Peor caso
-Predecir como se debería comportar en el mejor y en el peor caso
+  Predecir como se debería comportar en el mejor y en el peor caso
 
 ## Listas (Arrays)
 
@@ -552,7 +585,7 @@ def main():
     for i in range(0, len(lista)):
         suma = suma+lista[i]
     print(suma)
-main()  
+main()
 ```
 
 ```py
@@ -566,7 +599,7 @@ main()
         print("Se encontro")
     else:
         print("No se encontró")
-main()  
+main()
 ```
 
 Practicar métodos de arrays con: https://www.w3schools.com/python/python_ref_list.asp
@@ -583,6 +616,7 @@ def main():
   print(lista)
 main()
 ```
+
 recuerda el for a la izquierda es cerrado y a la derecha es abierto
 
 ```py
@@ -603,6 +637,7 @@ main()
 ```
 
 otra forma
+
 ```py
 def main():
   lista = []
@@ -637,6 +672,7 @@ main()
 ```
 
 inicio, fin, incremento/decremento
+
 ```py
 def main():
   nombre = "ULIMA"
@@ -650,6 +686,7 @@ main()
 ```
 
 ## Listas multidimensionales
+
 Arrays que contienen a otros arrays
 
 Recuerda la primer afila es 0,0 0,0 0,2
@@ -666,6 +703,7 @@ def main():
 
 main()
 ```
+
 ### Slicing es cortar, sacar una parte o un pedazo
 
 ```py
@@ -674,6 +712,7 @@ def main():
   print(a[1:4])
 main()
 ```
+
 Dará 2,3,4
 
 ```py
@@ -682,6 +721,7 @@ def main():
   print(a[:4])
 main()
 ```
+
 Dará 1,2,3,4
 
 ```py
@@ -696,8 +736,8 @@ def main():
 main()
 ```
 
-  evaluando = notas.sort()
-  print(evaluando)
+evaluando = notas.sort()
+print(evaluando)
 
 ```py
 def main():
@@ -734,10 +774,11 @@ def main():
 
   result = suma(num1,num2)
   print("La suma es", result)
-main()  
+main()
 ```
 
 Otra forma cambiando los parametros de suma
+
 ```py
 def suma(a,b):
   return a+b
@@ -748,10 +789,11 @@ def main():
 
   result = suma(num1,num2)
   print("La suma es", result)
-main()  
+main()
 ```
 
 Ejercicio de identificar si es primo un num
+
 ```py
 def esPrimo(n):
   cuentaDivisores = 2
@@ -761,13 +803,13 @@ def esPrimo(n):
   if cuentaDivisores > 2:
     print("n no es primo")
   else:
-    print("n es primo")  
+    print("n es primo")
 
 def main():
   num= int(input("Ingrese un numero: "))
-  
+
   esPrimo(num)
-main()  
+main()
 ```
 
 Duc typing, tpo de objketo que solo importa el tiempo de ejecución
@@ -776,7 +818,8 @@ una funcion que junte cosas y no importa los parametros
 
 ### Ejercicios
 
-1 
+1
+
 ```py
 def maxi(num1,num2):
   if num1 > num2:
@@ -789,9 +832,11 @@ def main():
   num2 = int(input("Ingrese un numero 2: "))
 
   print("El numero mayor es ", maxi(num1,num2))
-main()  
+main()
 ```
+
 8 leer un numero capicua
+
 ```py
 def invertir(n):
   a = ""
@@ -811,13 +856,14 @@ def main():
   print("El numero invertido es", invertir(num))
   esPalindromo(num)
 
-main()  
+main()
 ```
+
 tip: cambiar n por numero
 
-para el examen: crear 3 archivos en una carpeta examenControl2 
+para el examen: crear 3 archivos en una carpeta examenControl2
 
-El nombre será P1.py, P2.py, P3.py 
+El nombre será P1.py, P2.py, P3.py
 
 Hacer resumen de la documentación
 
@@ -829,44 +875,55 @@ Hacer resumen de la documentación
 ## Tupla
 
 las tuplas son como listas per oconstantes, no puedes modificar sus elementos}
+
 ```py
 tupla1 = tuple("programacion")
 print(tupla1)
 ```
+
 te devolveria cada uno de las letras por separado a partir de una palabra
 
 ```py
 tupla2 = tuple(range(10,20))
 print(tupla2)
 ```
+
 Imprimira todos los elementos del 10 al 19
 
 ```py
 tupla = (100,200,300)
 print(tupla.indes(200))
 ```
+
 te mandará el valor 200, o al menos el primer 200 que encuentre
 
 ## Diccionario
 
 Llave y diccionario
+
 ```py
 dicc = {"a":"alpha", "o":"omega", "g":"gamma"}
 print(dicc[1])
 ```
+
 te da error, xq ya no puedes acceder a los diccionarios por indices
 
 sino necesitas la llave
+
 ```py
 dicc = {"a":"alpha", "o":"omega", "g":"gamma"}
 print(dicc["a"])
 ```
+
 te dará alpha
+
 ```py
 dicc = {1:"alpha", 2:"omega", 3:"gamma"}
 print(dicc[1])
 ```
+
 te botará alpha
+
 ```py
 dicc = {"1":1,"2":2}
 print(dicc.get)
@@ -885,67 +942,137 @@ dicc={"Peru":"Lima","Colombia":"Bogota"}
         resp=str(input("cual es la capital de " + i + " : " ))
         if dicc[i]==resp:
             correctas=correctas+1
-            
     print("La cantidad de respuestas correctas es:",correctas)
 ```
 
-Escriba una función hay_poker que reciba cinco cartas de la baraja francesa (con la representación propuesta en la pregunta anterior) e informe si esas cartas forman o no un poker, es decir, si hay 4 cartas con el mismo número. Su función debe retornar True o False
+## Busqueda binaria 
+Va de izq a derech, la pos media es la mitad, osea de la derecha + izq / 2 = med 
+
+Entonces vamos a mover la posicion de la izquierda hacia la derecha para acercarse al numero buscado
+
+de nuevo buscamos el medio y luego volvemos a mover la referencia media
+
+![alt text](./busquedaBinaria.png)
+
+Si la lista se ordena previamente, no servira para recuperar la posicion original
+
+```py
+def binaria(lista, num):
+  indice=-1
+  izq = 0
+  der = len(lista) -1 
+  while izq <= der:
+    med = (izq+der)//2
+    if lista[med]==num:
+      indice = med
+      break
+    else: 
+      if num>lista[med]:
+        izq = med +1
+      else:
+        der=med-1
+  if indice == -1:
+    print("No se encontro el numero")
+  else:
+    print("Se encontro en la posicion", indice)
+def main():
+  lista = [10,20,30,40,50,60,70,80]
+  num = int(input("Ingrese el numero a buscar: "))
+  binaria(lista,num)
+main()
+```
+
 ```py
 import random
-def poker(carta1,carta2):
-    if carta1[1] == carta2[1]:
-        print("Es poker")
-    else:
-        print("No es poker")
+
+def pares(lista):
+  listaPar = []
+  for i in range(len(lista)):
+    if lista[i]%2==0:
+      listaPar.append(lista[i])
+  return listaPar
 def main():
-    carta = (("cor",1),("cor",2),("tre",1),("tre",2))
-    c1 = random.randint(0,3)
-    c2 = random.randint(0,3)
-    poker(carta[c1],carta[c2])
-main()
+  lista = []
+  for i in range (100):
+    lista.append(random.randint(0,9))
+  print(pares(lista))
+main()0
 ```
-> Este viene en examen
-5.	Escriba un programa que ayude a controlar el ingreso de empleados a una oficina. El programa debe tener ya cargados los apellidos de los empleados, y debe permitir que los empleados ingresen su código para registrar su ingreso. El programa se mantendrá aceptando códigos hasta que el Administrador del sistema ingrese un código maestro (7777), tras lo cual el programa imprimirá la lista de los empleados que no hayan registrado su ingreso.
 
 ```py
-from webbrowser import get
+# Escriba un programa que solicite al usuario ingresar un determinado número de pesos (valores enteros) hasta que se ingrese 0 y los almacene en una lista.
+# El programa debe mostrar el promedio de los pesos ingresados y ordenar la lista (para ello puede utilizar el método sort).
+# Finalmente, debe mostrar un mensaje en caso el valor 50 se encuentre en la lista. Para ello utilice el algoritmo de búsqueda binaria.
+
+def encontrar(lista):
+  indice = -1
+  izq = 0
+  der = len(lista) - 1
+  while izq<=der:
+    med=(izq+der)//2
+    if lista[med]==50:
+      indice=med
+      break
+    else:
+      if 50>lista[med]:
+        izq=med+1
+      else:
+        der=med-1
+  if indice ==-1:
+    print("50 no esta en la lista")
+  else:
+    print("50 se encontró en la posicion", indice)
+
+def promedio(lista):
+  sum = 0
+  for i in range (len(lista)):
+    sum = sum + lista[i]
+  return sum/len(lista)
+
 def main():
-    dicc = {
-        91: ["Ruiz", 0],
-        92: ["Alba", 0],
-        93: ["Fernan", 0]
-    }
-    cod = int(input("Ingrese codigo: "))
-    while cod != 7777:
-        if dicc.get(cod):
-            dicc[cod][1] += 1
-        cod = int(input("Ingrese codigo: "))
-    for i in dicc:
-        if dicc[i][1] == 0:
-            print("El trabajador " + dicc[i][0] + " no asistio")
+  lista = []
+  n = int(input("Ingrese numero: "))
+  while n!=0:
+    lista.append(n)
+    n = int(input("Ingrese numero: "))
+  lista.sort()
+  promedio(lista)
+  encontrar(lista)
 main()
 ```
-
-## Algoritmos de busqueda
 
 ```py
-def busqueda(lista,num):
-    indice = -1
-    for i in range(0,len(lista)):
-    # Esto xq necesitamos el indice
-        if lista[i] == num:
-            indice = i
-    if indice == -1:
-        print("No se encontró")
+# 4.	Escriba un programa en Python que genere 300 números aleatorios entre 2 y 3000. Debe ingresar a una lista aquellos v alores sean primos y ordenar la lista de mayor a menor utilizando el método sort().
+# Finalmente, muestre cuantos números de la lista son mayores que 100 utilizando búsqueda secuencial.
+import random
+
+def primo(num):
+    divisores=2
+    for i in range(2,num):
+        if num%i==0:
+            divisores=divisores+1
+            break
+    if divisores==2:
+        return True
     else:
-        print("Si se encontró en la posicion ", indice)
+        return False
+
+def mayores100(lista):
+    conta=0
+    for i in range(len(lista)):
+        if lista[i]>100:
+            conta=conta+1
+    return conta        
+
 def main():
-    lista = [10,21,3,4,6,90,100]
-    num = int(input("Ingrese su numero a buscar: "))
-    busqueda(lista, num)
+    lista=[]
+    for i in range(300):
+        num=random.randint(2, 3000)
+        if primo(num):
+            lista.append(num)
+    lista.sort(reverse=True)
+    print("Los valores mayores a 100 son: ",mayores100(lista))
+            
 main()
+
 ```
-
-## Trabajo 
-Se tiene que hacer una aplicacion utiizando todos los conceptos visto en clases (busqueda, ordenamiento, diccionarios)
-
