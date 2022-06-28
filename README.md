@@ -1076,3 +1076,116 @@ def main():
 main()
 
 ```
+
+## Lista de ordenamiento 
+
+### Algoritmo de burbuja
+```py
+def burbuja(lista):
+    aux = 0
+    for i in range(0,len(lista)-1):
+        # no necesitas ya la ultima linea 
+        for j in range (i+1, len(lista)):
+            if lista[i] > lista[j]:
+                aux = lista[i]
+                lista[i] = lista[j]
+                lista[j] = aux
+    return lista
+
+def main():
+    lista = [9,11,2,4,6,14,30,20]
+    print("La lista ordenada es: ", burbuja(lista))
+main()
+```
+
+Y para mayor a menor
+```py
+def burbuja(lista):
+    aux = 0
+    for i in range(0,len(lista)-1):
+        # no necesitas ya la ultima linea 
+        for j in range (i+1, len(lista)):
+            if lista[i] < lista[j]:
+                aux = lista[i]
+                lista[i] = lista[j]
+                lista[j] = aux
+    return lista
+
+def main():
+    lista = [9,11,2,4,6,14,30,20]
+    print("La lista ordenada es: ", burbuja(lista))
+main()
+```
+
+### Quick sort
+Recursividad
+Caso base:
+  Tamaño <= 1
+  Retorna Lista 
+
+Parte recursiva:
+  
+
+Tomamos un pivot como 9, de lista de los mayores y lista de menores
+Y otra ves ordenarmeos estas listas 
+
+Retyorna 
+  Lista Me + Lista Ig + Lista Ma
+
+Esto se repite hasta que el tamaño sea igual al caso base 
+
+```py
+def quicksort(lista):
+    if len(lista)<=1:
+        return lista
+    else:
+        listaMa = []
+        listaMe = []
+        listaIg = []
+        pivot = lista[0]
+        for i in range(0, len(lista)):
+            if lista[i]>pivot:
+                listaMa.append(lista[i])
+            elif lista[i]<pivot:
+                listaMe.append(lista[i])
+            else:
+                listaIg.append(lista[i])
+        listaMa = quicksort(listaMa)
+        listaMe = quicksort(listaMe)
+        return listaMe + listaIg + listaMa
+
+def main():
+    lista = [9,11,2,4,6,14,30,20]
+    print("La lista ordenada es: ", quicksort(lista))
+main()
+```
+
+2.	Implemente un programa que genere 100 números aleatorios (entre 0 y 9) y los ingrese a una lista. Posteriormente, ordene los valores e ingrese los primeros 50 en una nueva lista. Utilice el ordenamiento de burbuja.
+```py
+from random import random
+import random
+def burbuja(lista):
+    aux = 0
+    for i in range(0,len(lista)-1):
+        for j in range(i+1,len(lista)):
+            if lista[i] > lista[j]:
+                aux = lista[i]
+                lista[i] = lista[j]
+                lista[j] = aux
+    return lista
+def main():
+    list = []
+    for i in range (0,101):
+        n = random.randint(0,9)
+        list.append(n)
+    print(burbuja(list))
+    lista2 = list[:50]
+    print(lista2)
+main()
+```
+
+
+3.	Implemente un programa que solicite al usuario ingresar un determinado número de pesos (valores enteros) hasta que se ingrese 0, calcule el promedio de valores, agregue dicho valor al final de la lista y finalmente ordene dicha lista. Utilice el ordenamiento Quicksort.
+```py
+
+```
