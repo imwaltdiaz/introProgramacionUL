@@ -137,9 +137,12 @@ print(pos)
 
 Burbuja:
 
+crea un aux antes porsi
 Recorres una lista con 2 for, uno con el len -1 y el menor iniciando i+1 pero todo el len
 
+
 def burbuja(lista):
+  aux = 0
   for i in range(len(lista) - 1):
     for j in range(i + 1, len(lista)):
       if(lista[i] > lista[j]):
