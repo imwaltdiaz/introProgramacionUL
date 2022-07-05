@@ -65,7 +65,7 @@ thisdict =	{
   "year": 1964
 }
 print(thisdict["brand"])
-x = thisdict.get("model")
+thisdict.get("model")
 keys() method will return a list of all the keys in the dictionary.
 values() method will return a list of all the values in the dictionary.
 items() method will return each item in a dictionary, as tuples in a list.
@@ -91,7 +91,7 @@ d.values()	Returns a list of all the values in the dictionary
 ## Busqueda
 
 **Busqueda secuencial:**
-```py
+
 def main():
 #define la lista donde se va a buscar
 lista1 = [1, 7, 9, 10, 5, 8, 7, 10]
@@ -108,12 +108,12 @@ for x in range(0, longitud):
 if(lista1[x] == buscado):
 print("El elemento buscado tiene el indice: ", x)
 break
-```
+
 
 **Busqueda binaria:**
 Debe estar en orden
 Toma la mitad
-```py
+
 def main():
   lista = [10, 20, 50, 60, 90, 110]
   pos = -1
@@ -131,12 +131,14 @@ def main():
       else:
         izq = medio + 1
 print(pos)
-```
+
 
 ## Ordenamiento
 
 Burbuja:
-```py
+
+Recorres una lista con 2 for, uno con el len -1 y el menor iniciando i+1 pero todo el len
+
 def burbuja(lista):
   for i in range(len(lista) - 1):
     for j in range(i + 1, len(lista)):
@@ -145,7 +147,7 @@ def burbuja(lista):
         lista[i] = lista[j]
         lista[j] = aux
 return lista
-```
+
 
 Quicksort:
 1) Dividir : Si la secuencia S tiene 2 o más elementos,
@@ -159,6 +161,22 @@ de S dividiéndolos en 3 secuencias:
 3) Vencer: Finalmente, colocar nuevamente los elementos en S
 en orden, primero insertar los elementos de L, después E, y los
 elementos de G.
+
+Recursividad
+Caso base:
+  Tamaño <= 1
+  Retorna Lista 
+
+Parte recursiva:
+  
+
+Tomamos un pivot como 9, de lista de los mayores y lista de menores
+Y otra ves ordenarmeos estas listas 
+
+Retyorna 
+  Lista Me + Lista Ig + Lista Ma
+
+Esto se repite hasta que el tamaño sea igual al caso base 
 
 ```py
 def quicksort(lista):
