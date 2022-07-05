@@ -1189,3 +1189,5 @@ main()
 ```py
 
 ```
+https://www.reddit.com/r/programming/comments/ercgjr/why_is_quicksort_better_than_other_sorting/
+https://www.reddit.com/r/learnprogramming/comments/2oya8k/why_would_you_use_bubble_sort_or_linear_search/
