@@ -162,21 +162,21 @@ elementos de G.
 
 ```py
 def quicksort(lista):
-  if(len(lista) <= 1):
-    return lista
-  else:
-    pivot = lista[0]
-    menores = []
-    mayores = []
-    iguales = []
-    for i in range(0, len(lista)):
-      if(lista[i] > pivot):
-        mayores.append(lista[i])
-      elif(lista[i] < pivot):
-        menores.append(lista[i])
-      else:
-        iguales.append(lista[i])
-    mayores = quicksort(mayores)
-    menores = quicksort(menores)
-    return menores + iguales + mayores
+    if len(lista)<=1:
+        return lista
+    else:
+        listaMa = []
+        listaMe = []
+        listaIg = []
+        pivot = lista[0]
+        for i in range(0, len(lista)):
+            if lista[i]>pivot:
+                listaMa.append(lista[i])
+            elif lista[i]<pivot:
+                listaMe.append(lista[i])
+            else:
+                listaIg.append(lista[i])
+        listaMa = quicksort(listaMa)
+        listaMe = quicksort(listaMe)
+        return listaMe + listaIg + listaMa
 ```
